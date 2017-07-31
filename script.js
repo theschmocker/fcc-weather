@@ -5,6 +5,7 @@ let conditionDisplay;
 let icon;
 
 let tempAndUnits;
+let notification;
 
 let permissionDenied;
 let permissionGranted;
@@ -25,6 +26,14 @@ function init() {
   icon = document.getElementById('icon');
 
   tempAndUnits = document.getElementById('temp-and-units');
+  notification = document.querySelector('.notification');
+
+  tempAndUnits.addEventListener('click', changeDegreeUnit);
+  notification.addEventListener('click', function(e) {
+    if (!e.target.matches('.delete')) return;
+    this.style.display = 'none';
+  });
+
 
   permissionDenied = document.getElementById('permission-denied');
   permissionGranted = document.getElementById('permission-granted');
@@ -43,8 +52,6 @@ function main() {
   } else {
     console.log('Could not get location');
   }
-
-  tempAndUnits.addEventListener('click', changeDegreeUnit);
 }
 
 function getWeather (coords) {

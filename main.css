@@ -26,3 +26,8 @@ img {
     display: inline-block;
     cursor: pointer;
 }
+
+.notification {
+    max-width: 560px;
+    margin: 0 auto;
+}
