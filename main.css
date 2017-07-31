@@ -1,0 +1,28 @@
+img {
+  filter: grayscale();
+}
+
+.hero {
+  margin: auto auto;
+}
+
+.footer.has-text-centered {
+  color: #363636;
+}
+
+.footer-link {
+  color: #3273dc !important;
+}
+
+#icon {
+    font-size: 40px;
+}
+
+#permission-granted {
+    display: none;
+}
+
+#temp-and-units {
+    display: inline-block;
+    cursor: pointer;
+}

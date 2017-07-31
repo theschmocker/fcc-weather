@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Local Weather</title>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.2/css/bulma.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+        <script src="script.js">
+
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <div class="hero is-fullheight is-info is-bold">
+                <div id="permission-granted" class="hero-body has-text-centered">
+                    <div class="container">
+                        <h2 id="location" class="title is-1"></h2>
+                        <p id="temp-and-units" class="subtitle is-4"> <span id="temperature"></span> °<a id="degrees"></a></p>
+                        <div id="icon"></div>
+                        <p id="condition" class="subtitle"></p>
+                    </div>
+                </div>
+
+                <div id="permission-denied" class="hero-body has-text-centered">
+                    <div class="container">
+                        <h2 class="title is-1">Well, shoot!</h2>
+                        <br>
+                        <p class="subtitle is-4">I need your permission to grab your location! Without it, I can't provide you with up-to-date weather information :(</p>
+
+                    </div>
+                </div>
+
+
+                <div class="hero-foot">
+                    <footer class="footer has-text-centered">
+                        <p>
+                            FreeCodeCamp Local Weather project by <a target="_blank" class="footer-link">Jacob Schmocker</a>. Made with <a target="_blank" class="footer-link">Bulma</a>, using Erik Flowers' <a target="_blank" class="footer-link"  href="http://erikflowers.github.io/weather-icons/">Weather Icons</a>
+                        </p>
+                        <p>
+                            <a target="_blank" href="https://github.com/theschmocker">
+                                <i class="fa fa-2x fa-github"></i>
+                            </a>
+                        </p>
+                    </footer>
+                </div>
+
+
+            </div>
+
+        </div>
+    </body>
+</html>
